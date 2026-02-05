@@ -22,6 +22,26 @@ class _home_screenState extends State<home_screen> {
         content(),
         content(),
         content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
+        content(),
         content()
       ]
     ),
@@ -110,13 +130,19 @@ class _home_screenState extends State<home_screen> {
                       curve: Curves.easeInOut,
                       child: expandedIndex == index
                           ?
-                          Row(
-                            children: collections[index].images.map((img){
-                              return Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: img,
-                              );
-                            }).toList()
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child:Row(
+                              children: List.generate(
+                                collections[index].images.length,
+                                    (imgIndex) {
+                                  return Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: collections[index].images[imgIndex],
+                                  );
+                                },
+                              ),
+                            ),
                           )
                           : SizedBox(),
                     )
