@@ -1,16 +1,21 @@
-# faym_assignment
+# Collections Accordion (Flutter)
 
-A new Flutter project.
+A simple Flutter UI that displays a list of collection cards with horizontal image previews and a `+N` overlay for additional items.
 
-## Getting Started
+## Features
+- Scrollable list of collection cards
+- Collection title with expand/collapse arrow
+- Horizontal preview of product images
+- `+N` overlay when more images exist
+- Accordion behavior (only one expanded at a time)
+- Smooth expand and collapse animation
+- Rounded cards with elevation
 
-This project is a starting point for a Flutter application.
+## Behavior
+- Shows first 4 images in horizontal view
+- Displays `+N` overlay on the last image if more images are available
+- Tapping the header expands or collapses the collection
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Built With
+- Flutter
+- Material UI
